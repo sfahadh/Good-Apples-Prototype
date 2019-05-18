@@ -1,5 +1,5 @@
 import React from 'react'
-import './ProgressBar.css'
+import './Quiz.css'
 
 function FillerBar(props) {
     return (

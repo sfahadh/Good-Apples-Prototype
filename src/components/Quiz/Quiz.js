@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ProgressBar from './ProgressBar'
+import Questions from './Questions'
 
 export default class Quiz extends Component {
     constructor(props) {
@@ -14,7 +15,8 @@ export default class Quiz extends Component {
     const { percentage } = this.state
     return (
       <div>
-        <h1>This is the Quiz page</h1>
+        <h2>This is the Quiz page</h2>
+        <Questions/>
         <ProgressBar percentage={percentage}/>
       </div>
     )

@@ -1,6 +1,6 @@
 import React from 'react'
 import FillBar from './FillBar'
-import './ProgressBar.css'
+import './Quiz.css'
 
 const ProgressBar = (props) => {
 
