@@ -5,6 +5,7 @@ import Home from "./components/Home/Home"
 import Contact from "./components/Contact/Contact"
 import HideNav from "./components/Navbar/HideNav"
 import ShowNav from "./components/Navbar/ShowNav"
+import Quiz from "./components/Quiz/Quiz"
 
 class App extends Component {
   constructor() {
@@ -46,6 +47,7 @@ class App extends Component {
           <main>
             <Route exact path="/" component={Home}></Route>
             <Route path="/contact" component={Contact}></Route>
+            <Route path="/quiz" component={Quiz}></Route>
           </main>
         </div>
       </div>

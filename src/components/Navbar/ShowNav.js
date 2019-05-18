@@ -16,6 +16,7 @@ class ShowNav extends Component {
                     <ul className='nav-links'>
                         <h4><Link to="/">Home</Link></h4>
                         <h4><Link to="contact">Contact</Link></h4>
+                        <h4><Link to="/quiz">Quiz</Link></h4>
                     </ul>
                 </nav>
             </div>
