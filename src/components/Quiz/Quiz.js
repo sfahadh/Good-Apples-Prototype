@@ -14,10 +14,9 @@ export default class Quiz extends Component {
   render() {
     const { percentage } = this.state
     return (
-      <div>
-        <h2>This is the Quiz page</h2>
-        <Questions/>
+      <div className='quiz-page'>
         <ProgressBar percentage={percentage}/>
+        <Questions/>
       </div>
     )
   }

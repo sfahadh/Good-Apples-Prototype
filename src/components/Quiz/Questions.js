@@ -1,29 +1,36 @@
 import React, { Component } from 'react'
+import './Quiz.css'
 
 export default class componentName extends Component {
   render() {
     return (
       <div>
         <form className="question-form">
-            <h1>What is your area of interest?</h1>
-            <div>
-            <input type="radio" name="Design" id="answer-choice-1"/>
-            <label for="answer-choice-1">Design</label>
+            <h3>What is your area of interest?</h3>
+            <h4>(you can select multiple choices)</h4>
+            <div className="checkboxes">
+                <input type="checkbox" name="Business" id="business"/>
+                <label for="business">Business</label>
             </div>
 
-            <div>
-            <input type="radio" name="Tech" id="answer-choice-2"/>
-            <label for="answer-choice-2">Tech</label>
+            <div className="checkboxes">
+                <input type="checkbox" name="Design" id="design"/>
+                <label for="design">Design</label>
             </div>
 
-            <div>
-            <input type="radio" name="Vocational" id="answer-choice-3"/>
-            <label for="answer-choice-3">Vocational</label>
+            <div className="checkboxes">
+                <input type="checkbox" name="CulinaryArts" id="culinary-arts"/>
+                <label for="culinary-arts">Culinary Arts</label>
             </div>
 
-            <div>
-            <input type="radio" name="Business" id="answer-choice-4"/>
-            <label for="answer-choice-4">Business</label>
+            <div className="checkboxes">
+                <input type="checkbox" name="Technology" id="technology"/>
+                <label for="technology">Technology</label>
+            </div>
+
+            <div className="checkboxes">
+                <input type="checkbox" name="VocationalTraining" id="vocational-training"/>
+                <label for="vocational-training">Vocational Training</label>
             </div>
         </form>
       </div>

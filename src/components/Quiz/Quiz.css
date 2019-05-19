@@ -5,6 +5,29 @@
     margin: auto;
     border-radius: 50px;
     border: 1px solid black;
+    margin-top: 100pt;
+}
+
+.quiz-page {
+    height: 100vh;
+    background-color: rgb(74, 74, 74);
+    border: 2px solid rgb(74, 74, 74);
+}
+
+.question-form h3 {
+    font-family: Avenir-Book;
+    font-weight: 400;
+    margin: 52pt 26pt 0 26pt;
+    color: white;
+}
+
+.question-form h4 {
+    font-family: Avenir-Book;
+    font-weight: 400;
+    color: white;
+    font-size: 10pt;
+    position: relative;
+    top: -14pt;
 }
 
 .fill-bar {
@@ -12,4 +35,45 @@
     height: 100%;
     border-radius: inherit;
     transition: width .2s ease-in;
+}
+
+.question-form div label {
+    color: white;
+} 
+
+.checkboxes {
+    margin-bottom: 10px;
+}
+
+.checkboxes input {
+    position: relative;
+    /* opacity: 0; */
+    cursor: pointer;
+}
+
+.checkboxes span {
+    height: 20pt;
+    width: 22pt;
+    background-color: red;
+    border: 2px solid white;
+}
+
+#business {
+    margin-left: -80pt;
+}
+
+#design {
+    margin-left: -91pt;
+}
+
+#culinary-arts {
+    margin-left: -58pt;
+}
+
+#technology {
+    margin-left: -66pt;
+}
+
+#vocational-training {
+    margin-left: -25pt;
 }
