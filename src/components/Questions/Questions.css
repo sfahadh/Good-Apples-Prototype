@@ -1,0 +1,96 @@
+.quiz-page {
+    height: 100vh;
+    background-color: rgb(74, 74, 74);
+    border: 2px solid rgb(74, 74, 74);
+}
+
+.question-form h3 {
+    font-family: Avenir-Book;
+    font-weight: 400;
+    margin: 52pt 26pt 0 26pt;
+    color: white;
+}
+
+.question-form h4 {
+    font-family: Avenir-Book;
+    font-weight: 400;
+    color: white;
+    font-size: 10pt;
+    position: relative;
+    top: -14pt;
+}
+
+.question-form div label {
+    color: white;
+} 
+
+.question-page {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.question-form {
+    width: 350px;
+    margin: auto;
+}
+
+.answer-choices {
+    margin-left: 23%;
+    width: 50%;
+}
+
+.checkbox {
+    position: relative;
+    margin-bottom: 7px;
+}
+
+.checkbox input[type="checkbox"] {
+    display: none;
+    left: 0;
+}
+
+.checkbox label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 4px;
+    width: 22px;
+    height: 22px;
+    border-radius: 3px;
+    border: 1px solid;
+}
+
+.checkbox label:after {
+    content: '';
+    width: 10px;
+    height: 5px;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    transform: rotate(-45deg) scale(0);
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+
+.checkbox input[type="checkbox"]:checked ~ label::after {
+    transform: rotate(-45deg) scale(1);
+}
+
+.checkbox label {
+    min-height: 34px;
+    display: block;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.checkbox label span {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+}
+
+#design, #culinary-arts, #technology, #vocational-training, #business {
+    margin-left: -29%;
+}
