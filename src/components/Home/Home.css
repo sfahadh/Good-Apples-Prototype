@@ -1,0 +1,28 @@
+.header {
+    height: 35pt;
+}
+
+.home-page h1 {
+    font-family: Avenir-Light;
+    height: 27pt;
+    font-size: 20pt;
+    margin-top: 5px;
+    letter-spacing: 0.72pt;
+    font-weight: 400;
+}
+
+.first-image {
+    height: 472pt;
+    background-image: url('./carousel.png');
+}
+
+.first-image button {
+    margin-top: 380pt;
+    width: 238pt;
+    height: 62pt;
+    border-radius: 5%;
+    font-size: 21pt;
+    font-family: Avenir-Light;
+    color: white;
+    background-color: rgb(154, 179, 126);
+}
