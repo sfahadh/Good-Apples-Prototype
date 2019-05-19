@@ -7,7 +7,8 @@ export default class componentName extends Component {
         super(props)
 
         this.state = {
-            fillbar: props.percentage
+            fillbar: props.percentage,
+            nextQuestion: false
         }
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -15,15 +16,14 @@ export default class componentName extends Component {
     handleSubmit(evt) {
         evt.preventDefault();
         console.log("submit")
-        return <Redirect to="/quiz/question-2"/>
-        // this.setState({
-        //     fillbar: this.state.fillbar += 20
-        // })
-        // console.log(this.props.percentage)
+        this.setState({
+            nextQuestion: true
+        })
     }
 
 
     render() {
+        if(this.state.nextQuestion) { return <Redirect to="./quiz/question-2"/> }
         return (
         <div className="questions-page">
             <form className="question-form">

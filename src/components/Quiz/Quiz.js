@@ -7,7 +7,7 @@ export default class Quiz extends Component {
       super(props)
 
       this.state = {
-          percentage: 0
+        percentage: 0
       }
     }
 
