@@ -24,25 +24,25 @@ export default class Question4 extends Component {
       <div className="questions-page">
         <form className="question-form">
           <h3 >How much time are you willing to invest overall?</h3>
-          <h4></h4>
+          <br/>
           <br/>
           <div className="answer-choices"> 
             <div className="radio">
               <input type="radio" id="radio-1" name="selector"/>
-                <label for="radio-1">Pizza</label>
-              <div class="check"></div>
+              <label htmlFor="radio-1" id="radio-option-1">less than a month</label>
+              <div className="check"></div>
             </div>
           
             <div className="radio">
               <input type="radio" id="radio-2" name="selector"/>
-                <label for="radio-2">Pizza</label>
-              <div class="check"></div>
+              <label htmlFor="radio-2" id="radio-option-2">less than a year</label>
+              <div className="check"></div>
             </div>
             
             <div className="radio">
               <input type="radio" id="radio-3" name="selector"/>
-                <label for="radio-3">Pizza</label>
-              <div class="check"></div>
+              <label htmlFor="radio-3" id="radio-option-3">more than a year</label>
+              <div className="check"></div>
             </div>
           </div>
           <button onClick={this.handleSubmit}>Submit</button>
