@@ -1,14 +1,12 @@
 import React, { Component } from 'react'
 import './Questions.css'
-// import { Redirect } from "react-router-dom"
-import ProgressBar from '../ProgressBar/ProgressBar'
+import { Redirect } from "react-router-dom"
 
 export default class Question1 extends Component {
     constructor(props) {
         super(props)
 
         this.state = {
-            // fillbar: props.percentage,
             nextQuestion: false,
         }
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -24,10 +22,9 @@ export default class Question1 extends Component {
 
 
     render() {
-        // if(this.state.nextQuestion) { return <Redirect to="/quiz/question-2"/> }
+        if(this.state.nextQuestion) { return <Redirect to="/quiz/question-2"/> }
         return (
         <div className="questions-page">
-            {/* <ProgressBar percentage={this.state.fillbar}/> */}
             <form className="question-form">
                 <h3>What is your area of interest?</h3>
                 <h4>(you can select multiple choices)</h4>
