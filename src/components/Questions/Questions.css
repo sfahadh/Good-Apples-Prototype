@@ -64,6 +64,10 @@
     border: 1px solid;
 }
 
+.checkbox label:hover {
+    transform: scale(1.05);
+}
+
 .checkbox label:after {
     content: '';
     width: 10px;
@@ -96,8 +100,6 @@
 .label-field {
     margin-left: -29%;
 }
-
-/* ------------------------------------------------------------------------ */
 
 .radio {
     position: relative;
@@ -175,3 +177,17 @@ input[type=radio]:checked ~ label {
     color: white;
 }
   
+button {
+    width: 130pt;
+    height: 34pt;
+    margin-top: 100pt;
+    letter-spacing: 0.38pt;
+    font-size: 14pt;
+    font-family: Avenir-Light;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+button:hover {
+    transform: scale(1.1);
+}

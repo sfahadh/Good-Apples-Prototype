@@ -17,6 +17,7 @@
 .first-image {
     height: 472pt;
     background-image: url('./carousel.png');
+    background-size: 100%;
 }
 
 .first-image button {

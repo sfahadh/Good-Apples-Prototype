@@ -1,15 +1,33 @@
 import React, { Component } from 'react'
+import { Redirect } from 'react-router-dom'
 import './Home.css'
 
 export default class Home extends Component {
+  constructor() {
+    super()
+
+    this.state = {
+      toQuiz: false
+    }
+    this.handleRenderToQuiz = this.handleRenderToQuiz.bind(this)
+  }
+
+  handleRenderToQuiz(evt) {
+    evt.preventDefault();
+    this.setState({
+      toQuiz: true
+    })
+  }
+
   render() {
+    if(this.state.toQuiz) { return <Redirect to="/quiz/question-1"/> }
     return (
       <div className='home-page'>
         <div className='header'>
           <h1>Good Apples</h1>
         </div>
         <div className='first-image'>
-          <button>Find My Course</button>
+          <button onClick={this.handleRenderToQuiz}>Find My Course</button>
         </div>
         <div className='second-image'></div>
         <div className='third-image'>
