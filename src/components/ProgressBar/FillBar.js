@@ -1,7 +1,7 @@
 import React from 'react'
-import './Quiz.css'
+import './ProgressBar.css'
 
-function FillerBar(props) {
+const FillerBar = (props) => {
     return (
         <div className="fill-bar" style={{ width:`${props.percentage}%`}}></div>
     )

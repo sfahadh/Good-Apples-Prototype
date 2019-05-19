@@ -1,4 +1,4 @@
-.quiz-page {
+.quiz-page, .questions-page {
     height: 100vh;
     background-color: rgb(74, 74, 74);
     border: 2px solid rgb(74, 74, 74);
@@ -91,6 +91,6 @@
     transform: translateY(-50%);
 }
 
-#design, #culinary-arts, #technology, #vocational-training, #business {
+.label-field {
     margin-left: -29%;
 }

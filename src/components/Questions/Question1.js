@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './Questions.css'
 import { Redirect } from "react-router-dom"
+import ProgressBar from '../Quiz/ProgressBar'
 
 export default class componentName extends Component {
     constructor(props) {
@@ -8,7 +9,7 @@ export default class componentName extends Component {
 
         this.state = {
             fillbar: props.percentage,
-            nextQuestion: false
+            nextQuestion: false,
         }
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -23,36 +24,47 @@ export default class componentName extends Component {
 
 
     render() {
-        if(this.state.nextQuestion) { return <Redirect to="./quiz/question-2"/> }
+        if(this.state.nextQuestion) { return <Redirect to="/quiz/question-2"/> }
         return (
         <div className="questions-page">
+            <ProgressBar percentage={this.state.percentage}/>
             <form className="question-form">
                 <h3>What is your area of interest?</h3>
                 <h4>(you can select multiple choices)</h4>
                 <div className="answer-choices"> 
                     <div className="checkbox">
                         <input type="checkbox" id="checkbox-1"/>
-                        <label htmlFor="checkbox-1"><span id="business">Business</span></label>
+                        <label htmlFor="checkbox-1">
+                            <span className="label-field">Business</span>
+                        </label>
                     </div>
 
                     <div className="checkbox">
                         <input type="checkbox" id="checkbox-2"/>
-                        <label htmlFor="checkbox-2"><span id="design">Design</span></label>
+                        <label htmlFor="checkbox-2">
+                            <span className="label-field">Design</span>
+                        </label>
                     </div>
 
                     <div className="checkbox">
                         <input type="checkbox" id="checkbox-3"/>
-                        <label htmlFor="checkbox-3"><span id="culinary-arts">Culinary Arts</span></label>
+                        <label htmlFor="checkbox-3">
+                            <span className="label-field">Culinary Arts</span>
+                        </label>
                     </div>
 
                     <div className="checkbox">
                         <input type="checkbox" id="checkbox-4"/>
-                        <label htmlFor="checkbox-4"><span id="technology">Technology</span></label>
+                        <label htmlFor="checkbox-4">
+                            <span className="label-field">Technology</span>
+                        </label>
                     </div>
 
                     <div className="checkbox">
                         <input type="checkbox" id="checkbox-5"/>
-                        <label htmlFor="checkbox-5"><span id="vocational-training">Vocational Training</span></label>
+                        <label htmlFor="checkbox-5">
+                            <span className="label-field">Vocational Training</span>
+                        </label>
                     </div> 
                 </div>
                 <button onClick={this.handleSubmit}>Submit</button>
