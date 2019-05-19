@@ -41,8 +41,20 @@
     color: white;
 } 
 
+.question-page {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.question-form {
+    width: 350px;
+    margin: auto;
+}
+
 .answer-choices {
-    margin-left: 37%;
+    margin-left: 23%;
+    width: 50%;
 }
 
 .checkbox {
@@ -74,7 +86,7 @@
     border-bottom: 2px solid;
     border-left: 2px solid;
     transform: rotate(-45deg) scale(0);
-    position: absolute;
+    position: fixed;
     top: 12px;
     left: 10px;
 }
@@ -96,10 +108,6 @@
     transform: translateY(-50%);
 }
 
-#business {
-    margin-left: -188px;
-}
-
-#design, #culinary-arts, #technology, #vocational-training {
-    margin-left: -141pt;
+#design, #culinary-arts, #technology, #vocational-training, #business {
+    margin-left: -29%;
 }
