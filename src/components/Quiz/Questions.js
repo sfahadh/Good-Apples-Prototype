@@ -8,29 +8,31 @@ export default class componentName extends Component {
         <form className="question-form">
             <h3>What is your area of interest?</h3>
             <h4>(you can select multiple choices)</h4>
-            <div className="checkboxes">
-                <input type="checkbox" name="Business" id="business"/>
-                <label for="business">Business</label>
-            </div>
+            <div class="answer-choices"> 
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox-1"/>
+                    <label for="checkbox-1"><span id="business">Business</span></label>
+                </div>
 
-            <div className="checkboxes">
-                <input type="checkbox" name="Design" id="design"/>
-                <label for="design">Design</label>
-            </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox-2"/>
+                    <label for="checkbox-2"><span id="design">Design</span></label>
+                </div>
 
-            <div className="checkboxes">
-                <input type="checkbox" name="CulinaryArts" id="culinary-arts"/>
-                <label for="culinary-arts">Culinary Arts</label>
-            </div>
+                <div className="checkbox">
+                    <input type="checkbox" id="checkbox-3"/>
+                    <label for="checkbox-3"><span id="culinary-arts">Culinary Arts</span></label>
+                </div>
 
-            <div className="checkboxes">
-                <input type="checkbox" name="Technology" id="technology"/>
-                <label for="technology">Technology</label>
-            </div>
+                <div className="checkbox">
+                    <input type="checkbox" id="checkbox-4"/>
+                    <label for="checkbox-4"><span id="technology">Technology</span></label>
+                </div>
 
-            <div className="checkboxes">
-                <input type="checkbox" name="VocationalTraining" id="vocational-training"/>
-                <label for="vocational-training">Vocational Training</label>
+                <div className="checkbox">
+                    <input type="checkbox" id="checkbox-5"/>
+                    <label for="checkbox-5"><span id="vocational-training">Vocational Training</span></label>
+                </div> 
             </div>
         </form>
       </div>

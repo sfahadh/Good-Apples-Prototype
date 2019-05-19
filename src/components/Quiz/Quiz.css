@@ -41,39 +41,65 @@
     color: white;
 } 
 
-.checkboxes {
-    margin-bottom: 10px;
+.answer-choices {
+    margin-left: 37%;
 }
 
-.checkboxes input {
+.checkbox {
     position: relative;
-    /* opacity: 0; */
+    margin-bottom: 7px;
+}
+
+.checkbox input[type="checkbox"] {
+    display: none;
+    left: 0;
+}
+
+.checkbox label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 4px;
+    width: 22px;
+    height: 22px;
+    border-radius: 3px;
+    border: 1px solid;
+}
+
+.checkbox label:after {
+    content: '';
+    width: 10px;
+    height: 5px;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    transform: rotate(-45deg) scale(0);
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+
+.checkbox input[type="checkbox"]:checked ~ label::after {
+    transform: rotate(-45deg) scale(1);
+}
+
+.checkbox label {
+    min-height: 34px;
+    display: block;
+    margin-bottom: 0;
     cursor: pointer;
 }
 
-.checkboxes span {
-    height: 20pt;
-    width: 22pt;
-    background-color: red;
-    border: 2px solid white;
+.checkbox label span {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
 }
 
 #business {
-    margin-left: -80pt;
+    margin-left: -188px;
 }
 
-#design {
-    margin-left: -91pt;
-}
-
-#culinary-arts {
-    margin-left: -58pt;
-}
-
-#technology {
-    margin-left: -66pt;
-}
-
-#vocational-training {
-    margin-left: -25pt;
+#design, #culinary-arts, #technology, #vocational-training {
+    margin-left: -141pt;
 }
