@@ -1,7 +1,7 @@
 // import React, { Component } from 'react'
 // import './Questions.css'
 // import { Redirect } from 'react-router-dom'
-// import ProgressBar from '../Quiz/ProgressBar'
+// import ProgressBar from '../ProgressBar/ProgressBar'
 
 // export default class componentName extends Component {
 //     constructor(props) {
