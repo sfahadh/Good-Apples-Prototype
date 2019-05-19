@@ -8,7 +8,8 @@ export default class Question1 extends Component {
 
         this.state = {
             nextQuestion: false,
-            revealSubmit: false
+            revealSubmit: false,
+            checked: false
         }
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleRevealSubmit = this.handleRevealSubmit.bind(this);
@@ -16,7 +17,8 @@ export default class Question1 extends Component {
 
     handleRevealSubmit() {
         this.setState({
-            revealSubmit: true
+            revealSubmit: true,
+            checked: true
         })
     }
 
@@ -28,8 +30,9 @@ export default class Question1 extends Component {
     }
 
     render() {
-        const { nextQuestion, revealSubmit } = this.state
-        if(nextQuestion) { return <Redirect to="/quiz/question-2"/> }
+        const { nextQuestion, revealSubmit, checked } = this.state
+        if(nextQuestion) return <Redirect to="/quiz/question-2"/>
+
         return (
         <div className="questions-page">
             <form className="question-form">
