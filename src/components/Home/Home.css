@@ -26,3 +26,10 @@
     color: white;
     background-color: rgb(154, 179, 126);
 }
+
+.second-image {
+    height: 414pt;
+    border: 2px solid red;
+    background-image: url('./image.png');
+    background-size: 100%;
+}

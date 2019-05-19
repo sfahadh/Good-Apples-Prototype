@@ -11,9 +11,8 @@ export default class Home extends Component {
         <div className='first-image'>
           <button>Find My Course</button>
         </div>
-        <div className='second-image'>
-
-        </div>
+        <div className='second-image'></div>
+        <div className='third-image'></div>
       </div>
     )
   }
