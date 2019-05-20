@@ -18,8 +18,8 @@ export default class ProgressBar extends Component {
     render() {
         return (
             <div className="progress-bar">
-                <FillBar percentage={this.state.percentage}/>
-                {/* <Question1 percentage={this.state.percentage}/> */}
+                {/* <FillBar percentage={this.state.percentage}/>
+                <Question1 percentage={this.state.percentage}/> */}
                 {/* <Question2 percentage={this.state.percentage}/> */}
                 {/* <Question3 percentage={this.state.percentage}/> */}
                 {/* <Question4 percentage={this.state.percentage}/> */}
